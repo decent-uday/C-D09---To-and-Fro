@@ -1,3 +1,5 @@
+#Implementation in C
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -31,3 +33,16 @@ printf("%d\n", td*t);
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     return 0;
 }
+
+//Implementation in PYTHON
+
+test = int(input())
+for i in range(test):
+    F, B, T, D = map(int, input().split())
+    t = 0
+    while B<D:
+        t += B+F
+        D = D+F-B
+    t += D
+    print(t*T)
+
