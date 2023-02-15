@@ -31,3 +31,15 @@ Sample Output 0
 
 162
 220
+
+// IMPLEMENTATION IN PYTHON
+
+test = int(input())
+for i in range(test):
+    F, B, T, D = map(int, input().split())
+    t = 0
+    while B<D:
+        t += B+F
+        D = D+F-B
+    t += D
+    print(t*T)
